@@ -1,0 +1,124 @@
+<!-- Sale & Revenue Start -->
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-sm-6 col-xl-3">
+            <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+                <i class="fa fa-chart-line fa-3x text-primary"></i>
+                {{#if revenue}}
+                <div class="ms-3">
+                    <p class="mb-2">Tổng doanh thu</p>
+                    <h6 class="mb-0">{{revenue}} $</h6>
+                </div>
+                {{/if}}
+            </div>
+        </div>
+        <div class="col-sm-6 col-xl-3">
+            <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+                <i class="fa fa-chart-bar fa-3x text-primary"></i>
+                {{#if numBill}}
+                <div class="ms-3">
+                    <p class="mb-2">Tổng số hoá đơn</p>
+                    <h6 class="mb-0">{{numBill}}</h6>
+                </div> 
+                {{/if}}
+            </div>
+        </div>
+        <div class="col-sm-6 col-xl-3">
+            <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+                <i class="fa fa-chart-area fa-3x text-primary"></i>
+                {{#if numProduct}}
+                <div class="ms-3">
+                    <p class="mb-2">Tổng số sản phẩm</p>
+                    <h6 class="mb-0">{{numProduct}}</h6>
+                </div>
+                {{/if}}
+            </div>
+        </div>
+        <div class="col-sm-6 col-xl-3">
+            <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+                <i class="fa fa-chart-pie fa-3x text-primary"></i>
+                {{#if numUser}}
+                <div class="ms-3">
+                    <p class="mb-2">Số khách hàng</p>
+                    <h6 class="mb-0">{{numUser}}</h6>
+                </div>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Sale & Revenue End -->
+
+
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-12">
+            <div class="bg-light rounded h-100 p-4">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h6 class="mb-4">Danh sách sản phẩm trong kho hàng</h6>
+                    <a href="/admin/product">Show All</a>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Tên hàng</th>
+                                <th scope="col">Mô tả</th>
+                                <th scope="col">Hãng</th>
+                                <th scope="col">Giá</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{#each product}}
+                            <tr>
+                                <td>{{this.name}}</td>
+                                <td>{{this.description}}</td>
+                                <td>{{this.brand}}</td>
+                                <td>{{this.price}}</td>
+                            </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Recent Sales Start -->
+<div class="container-fluid pt-4 px-4">
+    <div class="bg-light text-center rounded p-4">
+        <div class="d-flex align-items-center justify-content-between mb-4">
+            <h6 class="mb-0">Đã bán gần đây</h6>
+            <a href="/admin/bill">Show All</a>
+        </div>
+        <div class="table-responsive">
+            <table class="table text-start align-middle table-bordered table-hover mb-0">
+                <thead>
+                    <tr>
+                        <th scope="col">Tên hàng</th>
+                        <th scope="col">Người mua</th>
+                        <th scope="col">Hãng</th>
+                        <th scope="col">Số lượng</th>
+                        <th scope="col">Giá</th>
+                        <th scope="col">Ngày mua</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each bill}}
+                    <tr>
+                        <td>{{this.name}}</td>
+                        <td>{{this.user}}</td>
+                        <td>{{this.brand}}</td>
+                        <td>{{this.number}}</td>
+                        <td>{{this.price}}$</td>
+                        <td>{{this.date}}</td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- Recent Sales End -->

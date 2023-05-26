@@ -1,0 +1,55 @@
+<!-- Information Customer -->
+<div class="container-fluid pt-4 px-4">
+    {{#each acc}}
+    <div class="row g-4">
+        <div class="col-sm-12 col-xl-6">
+            <div class="bg-light rounded h-100 p-4">
+                <h6 class="mb-4">Thông tin Khách hàng</h6>
+                <form method="post" action="/admin/user/{{this.slug}}">
+                    <div class="mb-3">
+                        <label for="account" class="form-label">Tên đăng nhập</label>
+                        <input type="text" class="form-control" name="account" value="{{this.account}}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Mật khẩu</label>
+                        <input type="password" class="form-control" name="password" value="{{this.password}}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Tên</label>
+                        <input type="text" class="form-control" name="name" value="{{this.name}}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" name="email" value="{{this.email}}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Số điện thoại</label>
+                        <input type="text" class="form-control" name="phone" value="{{this.phone}}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Địa chỉ</label>
+                        <input type="text" class="form-control" name="address" value="{{this.address}}">
+                    </div>
+                    {{!-- <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch"
+                            id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Khoá tài khoản khách hàng</label>
+                    </div> --}}
+                    <button type="submit" class="btn btn-primary w-100 m-2">Update</button>
+                </form>
+            </div>
+        </div>
+        {{!-- <div class="col-sm-12 col-xl-6">
+            <div class="bg-light rounded h-100 p-4">
+                <h6 class="mb-4">Ảnh đại diện Khách hàng</h6>
+                <div>
+                    <center><img class="rounded-circle me-lg-2" src="../../public/images/admin/20127478.jpg" alt="Avartar" style="width: 350px; height: 350px"></center>
+                    <button href="#" class="btn btn-primary w-100 m-2" type="button">Đổi ảnh đại diện</button>
+                    <button type="button" class="btn btn-danger w-100 m-2">Xoá khách hàng</button>
+                </div>
+            </div>
+        </div> --}}
+    </div>
+    {{/each}}
+</div>
+<!-- End Information Customer -->

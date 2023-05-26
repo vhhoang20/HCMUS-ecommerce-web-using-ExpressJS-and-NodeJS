@@ -1,0 +1,94 @@
+<!-- Table Start -->
+<div class="col-lg-12">
+    <form class="row" method="get" action="/admin/user">
+        <div class="col-md-8" >
+            <div class="product-search">
+                <input name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+        <div class="container-fluid pt-4 px-4">
+            <div class="row g-2">
+                <div class="col-12">
+                    <div class="bg-light rounded h-100 p-4">
+                        <div class="col-12" method="get" action="/admin/user">
+                            <div class="row">
+                                <div class="col-4">
+                                    {{!-- <label for="filter">Filter by Admin:</label>
+                                    <select id="cars" name="admin">
+                                    <option value="">default</option>
+                                    <option value={{false}}>not admin</option>
+                                    <option value={{true}}>admin</option>
+                                    </select> --}}
+                                </div>
+                                <div class="col-5">
+                                    <label for="filter">Sort by account:</label>
+                                    <select id="cars" name="account">
+                                        <option value="1">A to Z</option>
+                                        <option value="-1">Z to A</option>
+                                    </select>
+                                </div>
+                                <button class="col-3" type="submit">Sort</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-12">
+            <div class="bg-light rounded h-100 p-4">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h6 class="mb-4">Danh sách Khách hàng</h6>
+                    <a href="/admin/user/add-user">Thêm khách hàng</a>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Tên đăng nhập</th>
+                                <th scope="col">Mật khẩu</th>
+                                <th scope="col">Họ tên</th> 
+                                <th scope="col">Email</th>
+                                <th scope="col">SDT</th>
+                                <th scope="col">Địa chỉ</th>
+                                <th scope="col">Admin</th>
+                                <th scope="col">Chỉnh sửa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{#each acc}}
+                            <tr>
+                                <td>{{this.account}}</td>
+                                <td>{{this.password}}</td>
+                                <td>{{this.name}}</td>
+                                <td>{{this.email}}</td>
+                                <td>{{this.phone}}</td>
+                                <td>{{this.address}}</td>
+                                <td>{{this.admin}}</td>
+                                <td><a class="btn btn-sm btn-primary" href="/admin/user/{{this.slug}}">Edit</a></td>
+                            </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+                    <div class="pagination">
+                        {{#if pre_page}}
+                            <a href="/admin/user?page={{pre_page}}">&laquo;</a>
+                        {{/if}}
+                        {{#each pages}}
+                            <a href="/admin/user?page={{this.value}}">{{this.value}}</a>
+                        {{/each}}
+                        {{#if next_page}}
+                            <a href="/admin/user?page={{next_page}}">&raquo;</a>
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Table End -->

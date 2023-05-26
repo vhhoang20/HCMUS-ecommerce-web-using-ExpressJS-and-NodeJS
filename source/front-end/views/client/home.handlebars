@@ -1,0 +1,165 @@
+<!-- Main Slider Start -->
+<div class="home-slider">
+    <div class="main-slider">
+        {{#each product}}
+        <div class="main-slider-item">
+            <a href="/product/{{this.slug}}">
+                <img style="width:400px;height:500px" src="{{this.image}}" alt="Slider Image" />
+            </a>
+        </div>
+        {{/each}}
+    </div>
+</div>
+<!-- Main Slider End -->
+
+
+<!-- Feature Start-->
+<div class="feature">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 feature-col">
+                <div class="feature-content">
+                    <i class="fa fa-shield"></i>
+                    <h2>Trusted Shopping</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 feature-col">
+                <div class="feature-content">
+                    <i class="fa fa-shopping-bag"></i>
+                    <h2>Quality Product</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 feature-col">
+                <div class="feature-content">
+                    <i class="fa fa-truck"></i>
+                    <h2>Worldwide Delivery</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 feature-col">
+                <div class="feature-content">
+                    <i class="fa fa-phone"></i>
+                    <h2>Telephone Support</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Feature End-->
+
+
+<!-- Category Start-->
+<div class="category">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="category-img">
+                    <img src="images/client/samsung brand.png" />
+                    <a class="category-name" href="/product?search=&brand=samsung">
+                        <h2>Samsung</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="category-img">
+                    <img src="images/client/xiaomi brand.png" />
+                    <a class="category-name" href="/product?search=&brand=Xiaomi">
+                        <h2>Xiaomi</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="category-img">
+                    <img src="images/client/sony brand.png" />
+                    <a class="category-name" href="/product?search=&brand=Sony">
+                        <h2>Sony</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="category-img">
+                    <img src="images/client/iphone brand.png" />
+                    <a class="category-name" href="/product?search=&brand=apple">
+                        <h2>Apple</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Category End-->
+
+
+<!-- Featured Product Start -->
+<div class="featured-product">
+    <div class="container">
+        <div class="section-header">
+            <h3>Featured Product</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra at massa sit amet ultricies. Nullam consequat, mauris non interdum cursus
+            </p>
+        </div>
+        <div class="row align-items-center product-slider product-slider-4">
+            {{#each product}}
+            <div class="col-lg-3">
+                <div class="product-item">
+                    <div class="product-image">
+                        <a href="/product/{{this.slug}}">
+                            <img src="{{this.image}}" alt="Product Image">
+                        </a>
+                        <div class="product-action">
+                            <a href="#"><i class="fa fa-cart-plus"></i></a>
+                            <a href="#"><i class="fa fa-heart"></i></a>
+                            <a href="#"><i class="fa fa-search"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="title"><a href="/product/{{this.slug}}">{{this.name}}</a></div>
+                        <div class="ratting">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="price">{{this.price}} $</div>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+<!-- Featured Product End -->
+
+
+<!-- Newsletter Start -->
+<div class="newsletter">
+    <div class="container">
+        <div class="section-header">
+            <h3>Subscribe Our Newsletter</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra at massa sit amet ultricies. Nullam consequat, mauris non interdum cursus
+            </p>
+        </div>
+        <div class="form">
+            <input type="email" value="Your email here">
+            <button>Submit</button>
+        </div>
+    </div>
+</div>
+<!-- Newsletter End -->
+
+
+

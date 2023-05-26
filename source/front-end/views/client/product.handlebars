@@ -1,0 +1,117 @@
+<!-- Product List Start -->
+<div class="product-view">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form class="row" method="get" action="/product">
+                            <div class="col-md-8" >
+                                <div class="product-search">
+                                    <input name="search">
+                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                            <div class="container-fluid pt-4 px-4">
+                                <div class="row g-2">
+                                    <div class="col-12">
+                                        <div class="bg-light rounded h-100 p-4">
+                                            <div class="col-12" method="get" action="/product">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <label for="filter">Brand:</label>
+                                                        <select id="cars" name="brand">
+                                                        <option value="">default</option>
+                                                        <option value="samsung">samsung</option>
+                                                        <option value="Apple">Apple</option>
+                                                        <option value="xiaomi">xiaomi</option>
+                                                        <option value="sony">sony</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <label for="filter">Sort by price:</label>
+                                                        <select id="cars" name="price">
+                                                        <option value="-1">descending</option>
+                                                        <option value="1">ascending</option>
+                                                        </select>
+                                                    </div>
+                                                    <button class="col-3" type="submit">Filter</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    {{#each product}}
+                    <div class="col-lg-4">
+                        <div class="product-item">
+                            <div class="product-image">
+                                <a href="/product/{{this.slug}}">
+                                    <img src="{{this.image}}" alt="Product Image" style="width:250px;height:250px;">
+                                </a>
+                                <div class="product-action">
+                                    <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                    <a href="#"><i class="fa fa-heart"></i></a>
+                                    <a href="#"><i class="fa fa-search"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <div class="title"><a href="/product/{{this.slug}}">{{this.name}}</a></div>
+                                <div class="ratting">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="price">{{this.price}} $</div>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+                
+                <div class="col-lg-12">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            {{#if pre_page}}
+                            <li class="page-item">
+                                <a class="page-link" href="/product?page={{pre_page}}" tabindex="-1">Previous</a>
+                            </li>
+                            {{/if}}
+                            {{!-- <li class="page-item"><a class="page-link" href="/product/{{this.page}}">1</a></li>
+                            <li class="page-item"><a class="page-link" href="/product/{{this.page}}">2</a></li>
+                            <li class="page-item"><a class="page-link" href="/product/{{this.page}}">3</a></li> --}}
+                            {{#each pages}}
+                                <li class="page-item"><a class="page-link" href="/product?page={{this.value}}">{{this.value}}</a></li>
+                            {{/each}}
+                            {{#if next_page}}
+                            <li class="page-item">
+                                <a class="page-link" href="/product?page={{next_page}}">Next</a>
+                            </li>
+                            {{/if}}
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            
+            
+            
+            <div class="col-md-3">
+                <div class="sidebar-widget brands">
+                    <h2 class="title">Our Brands</h2>
+                    <ul>
+                        <li><a href="/product?search=&brand=samsung">Samsung </a></li>
+                        <li><a href="/product?search=&brand=Apple">Apple </a></li>
+                        <li><a href="/product?search=&brand=Sony">Sony </a></li>
+                        <li><a href="/product?search=&brand=Xiaomi">Xiaomi</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Product List End -->
+

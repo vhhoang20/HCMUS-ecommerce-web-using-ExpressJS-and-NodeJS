@@ -1,0 +1,42 @@
+<!-- Information Product-->
+<div class="container-fluid pt-4 px-4">
+    {{#each bill}}
+    <div class="row g-4">
+        <div class="col-sm-0 col-xl-3"></div>
+        <div class="col-sm-12 col-xl-6">
+            <div class="bg-light rounded h-100 p-4">
+                <h6 class="mb-4">Thông tin đơn hàng</h6>
+                <form method="post" action="/admin/bill/{{this.slug}}">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Tên hàng</label>
+                        <input type="text" class="form-control" name="name" value="{{this.name}}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="user" class="form-label">Người mua</label>
+                        <input type="text" class="form-control" name="user" value="{{this.user}}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="brand" class="form-label">Hãng</label>
+                        <input type="text" class="form-control" name="brand" value="{{this.brand}}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="number" class="form-label">Số lượng</label>
+                        <input type="number" class="form-control" name="number" value={{this.number}}>
+                    </div>
+                    <div class="mb-3">
+                        <label for="price" class="form-label">Giá</label>
+                        <input type="number" class="form-control" name="price" value={{this.price}}>
+                    </div>
+                    <div class="mb-3">
+                        <label for="date" class="form-label">Ngày bán</label>
+                        <input type="datetime" class="form-control" name="date" value="{{this.date}}">
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 m-2">Submit</button>
+                    {{!-- <button type="button" class="btn btn-danger w-100 m-2">Xoá đơn hàng</button> --}}
+                </form>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+<!-- End Information Product -->

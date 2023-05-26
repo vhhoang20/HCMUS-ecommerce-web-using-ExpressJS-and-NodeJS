@@ -1,0 +1,92 @@
+<!-- Table Start -->
+<div class="col-lg-12">
+    <form class="row" method="get" action="/admin/bill">
+        <div class="col-md-8" >
+            <div class="product-search">
+                <input name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+        <div class="container-fluid pt-4 px-4">
+            <div class="row g-2">
+                <div class="col-12">
+                    <div class="bg-light rounded h-100 p-4">
+                        <div class="col-12" method="get" action="/admin/bill">
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="filter">Brand:</label>
+                                    <select id="cars" name="brand">
+                                    <option value="">default</option>
+                                    <option value="samsung">samsung</option>
+                                    <option value="Apple">Apple</option>
+                                    <option value="xiaomi">xiaomi</option>
+                                    <option value="sony">sony</option>
+                                    </select>
+                                </div>
+                                <div class="col-5">
+                                    <label for="filter">Sort by name:</label>
+                                    <select id="cars" name="name">
+                                    <option value="1">A to Z</option>
+                                    <option value="-1">Z to A</option>
+                                    </select>
+                                </div>
+                                <button class="col-3" type="submit">Filter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-12">
+            <div class="bg-light rounded h-100 p-4">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h6 class="mb-4">Danh sách hoán đơn</h6>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Tên hàng</th>
+                                <th scope="col">Người mua</th>
+                                <th scope="col">Hãng</th>
+                                <th scope="col">Số lượng</th>
+                                <th scope="col">Giá</th>
+                                <th scope="col">Ngày mua</th>
+                                <th scope="col">Chi tiết</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{#each bill}}
+                            <tr>
+                                <td>{{this.name}}</td>
+                                <td>{{this.user}}</td>
+                                <td>{{this.brand}}</td>
+                                <td>{{this.number}}</td>
+                                <td>{{this.price}}$</td>
+                                <td>{{this.date}}</td>
+                                <td><a class="btn btn-sm btn-primary" href="/admin/bill/{{this.slug}}">Detail</a></td>
+                            </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+                    <div class="pagination">
+                        {{#if pre_page}}
+                            <a href="/admin/product?page={{pre_page}}">&laquo;</a>
+                        {{/if}}
+                        {{#each pages}}
+                            <a href="/admin/product?page={{this.value}}">{{this.value}}</a>
+                        {{/each}}
+                        {{#if next_page}}
+                            <a href="/admin/product?page={{next_page}}">&raquo;</a>
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

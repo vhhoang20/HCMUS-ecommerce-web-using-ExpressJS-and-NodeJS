@@ -1,0 +1,3 @@
+Add folder “database”, “models” trong database vào thư mục gốc PHONE-SHOP-WEB của folder backend
+- Add folder “views” trong frontend vào thư mục gốc PHONESHOP-WEB
+- Mở terminal and chạy câu lệnh “npm install” rồi chạy “npm start”
