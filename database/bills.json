@@ -1,0 +1,31 @@
+[{
+  "_id": {
+    "$oid": "63b274932dd934e7e4bd5066"
+  },
+  "brand": "samsung",
+  "date": {
+    "$date": {
+      "$numberLong": "1672444800000"
+    }
+  },
+  "number": 1,
+  "price": 150,
+  "user": "user5",
+  "name": "Galaxy A04e",
+  "slug": "63b274932dd934e7e4bd5066"
+},{
+  "_id": {
+    "$oid": "63b2766b2dd934e7e4bd5067"
+  },
+  "brand": "apple",
+  "date": {
+    "$date": {
+      "$numberLong": "1672531200000"
+    }
+  },
+  "name": "iPhone 11",
+  "number": 1,
+  "price": 450,
+  "user": "user1",
+  "slug": "63b2766b2dd934e7e4bd5067"
+}]

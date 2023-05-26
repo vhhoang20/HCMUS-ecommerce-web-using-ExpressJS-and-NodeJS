@@ -1,0 +1,152 @@
+[{
+  "_id": {
+    "$oid": "63986be6e5296d7441c6f96e"
+  },
+  "admin": false,
+  "account": "user2",
+  "password": "2",
+  "email": "user2@gmail.com",
+  "phone": "0123456789",
+  "address": "321 Nguyen Van Cu",
+  "name": "user two",
+  "slug": "user2"
+},{
+  "_id": {
+    "$oid": "63986bf5e5296d7441c6f96f"
+  },
+  "admin": true,
+  "account": "user8",
+  "password": "8",
+  "email": "user8@gmail.com",
+  "phone": "0123456789",
+  "address": "324 Nguyen Hue",
+  "name": "User 8",
+  "slug": "user8"
+},{
+  "_id": {
+    "$oid": "63986b5ee5296d7441c6f96c"
+  },
+  "admin": false,
+  "account": "user1",
+  "password": "1",
+  "email": "user1@gmail.com",
+  "phone": "0123456789",
+  "address": "324 Nguyen Hue",
+  "name": "user one",
+  "slug": "user1"
+},{
+  "_id": {
+    "$oid": "6399d3f107db57df0bbfd155"
+  },
+  "admin": false,
+  "account": "user6",
+  "password": "abc123",
+  "email": "user6@gmail.com",
+  "phone": "",
+  "address": "",
+  "name": "",
+  "slug": "user6"
+},{
+  "_id": {
+    "$oid": "6399d53807db57df0bbfd15b"
+  },
+  "admin": false,
+  "account": "user5",
+  "password": "abc123",
+  "email": "user5@gmail.com",
+  "phone": "",
+  "address": "",
+  "__v": 0,
+  "slug": "user5"
+},{
+  "_id": {
+    "$oid": "6399d64888f7b3a776878cb7"
+  },
+  "admin": false,
+  "account": "user7",
+  "password": "abc123",
+  "name": "User Seven",
+  "email": "user7@gmail.com",
+  "phone": "123456",
+  "address": "",
+  "__v": 0,
+  "slug": "user7"
+},{
+  "_id": {
+    "$oid": "6399d72aae591a84858c87db"
+  },
+  "admin": false,
+  "account": "user4",
+  "password": "abc123",
+  "name": "user Four",
+  "email": "user4@gmail.com",
+  "phone": "0123456789",
+  "address": "",
+  "__v": 0,
+  "slug": "user4"
+},{
+  "_id": {
+    "$oid": "63b1959557926b3856659156"
+  },
+  "admin": false,
+  "account": "user9",
+  "password": "9",
+  "email": "",
+  "phone": "",
+  "address": "",
+  "name": "User Nine",
+  "slug": "user9",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b2d41c7172839bac1f6de6"
+  },
+  "admin": true,
+  "account": "user3",
+  "password": "3",
+  "email": "user3@gmail.com",
+  "phone": "123456789",
+  "address": "423 Quang Trung",
+  "name": "Admin 1",
+  "slug": "user3",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b4e750642c9dd898694c81"
+  },
+  "admin": false,
+  "account": "user7",
+  "password": "abc123",
+  "email": "user7@gmail.com",
+  "phone": "0123456789",
+  "address": "",
+  "name": "",
+  "slug": "user7",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b4e79e642c9dd898694c96"
+  },
+  "admin": false,
+  "account": "user10",
+  "password": "10",
+  "email": "user10@gmail.com",
+  "phone": "0123456789",
+  "address": "hello world",
+  "name": "user_ten",
+  "slug": "user10",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b4f3f152f726c95c33210d"
+  },
+  "admin": false,
+  "account": "user11",
+  "password": "11",
+  "email": "user11@gmail.com",
+  "phone": "0123456789",
+  "address": "",
+  "name": "User Eleven",
+  "slug": "user11",
+  "__v": 0
+}]

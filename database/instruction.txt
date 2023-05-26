@@ -1,0 +1,5 @@
+đồ án này sử dụng mongo atlas để lưu dữ liệu trên cloud.
+nên ta chỉ cần kết nối tới đường dẫn sau:
+mongodb+srv://shop_web:159357456258@cluster0.nasaa5r.mongodb.net/test
+là có thể lấy dữ liệu trực tiếp trên cloud.
+Người dùng có thể sử dụng mongo compass để tiện lợi hơn

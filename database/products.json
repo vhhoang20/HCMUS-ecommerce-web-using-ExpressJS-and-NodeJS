@@ -1,0 +1,92 @@
+[{
+  "_id": {
+    "$oid": "63909cd7aa76bdee9af471c2"
+  },
+  "name": "Galaxy A23 5G",
+  "image": "https://images.samsung.com/is/image/samsung/p6pim/vn/sm-a236ezkwxxv/gallery/vn-galaxy-a23-5g-sm-a236-sm-a236ezkwxxv-thumb-533637105?$252_252_PNG$",
+  "description": "5G\nFHD+ 120Hz Smooth Display\n50MP Quad Camera",
+  "brand": "samsung",
+  "slug": "Galaxy-A23-5G",
+  "price": 200
+},{
+  "_id": {
+    "$oid": "63909db8aa76bdee9af471c4"
+  },
+  "image": "https://cdn.tgdd.vn/Products/Images/42/250262/iphone-13-pro-max-gold-1-600x600.jpg",
+  "name": "iPhone 13 Pro Max",
+  "description": "Chip Apple A15 Bionic\n\nRAM: 6 GB\n\nDung lượng: 512 GB\n\nCamera sau: 3 camera 12 MP\n\nCamera trước: 12 MP\n\nPin 4352 mAh, Sạc 20 W",
+  "brand": "Apple",
+  "slug": "iPhone-13-Pro-Max",
+  "price": 1200
+},{
+  "_id": {
+    "$oid": "63909c6caa76bdee9af471c0"
+  },
+  "name": "Galaxy A04e",
+  "image": "https://images.samsung.com/is/image/samsung/p6pim/vn/sm-a042flbhxxv/gallery/vn-galaxy-a04e-sm-a042-sm-a042flbhxxv-thumb-534320117?$252_252_PNG$",
+  "description": "Màn hình tràn viền vô cực Infinity-V 6,5inch\nVi xử lý Octa-core\nPin siêu khủng cho trải nghiệm đến 2 ngày",
+  "brand": "samsung",
+  "slug": "Galaxy-A04e",
+  "price": 150
+},{
+  "_id": {
+    "$oid": "63909d72aa76bdee9af471c3"
+  },
+  "image": "https://cdn.tgdd.vn/Products/Images/42/153856/iphone-11-trang-600x600.jpg",
+  "name": "iPhone 11",
+  "description": "Chip Apple A13 Bionic\n\nRAM: 4 GB\n\nDung lượng: 64 GB\n\nCamera sau: 2 camera 12 MP\n\nCamera trước: 12 MP\n\nPin 3110 mAh, Sạc 18 W",
+  "brand": "Apple",
+  "slug": "iPhone-11",
+  "price": 450
+},{
+  "_id": {
+    "$oid": "63909c20aa76bdee9af471be"
+  },
+  "name": "Galaxy Z Fold4",
+  "image": "https://images.samsung.com/is/image/samsung/p6pim/vn/2208/gallery/vn-galaxy-z-fold4-f936-sm-f936bzehxxv-thumb-533085360?$252_252_PNG$",
+  "description": "Linh hoạt đa nhiệm.\nThiết bị duy nhất có thể gập lại với chế độ xem không bị gián đoạn, mang lại trải nghiệm sống động nhất.\nS Pen. Viết bất cứ nơi nào bạn cần.",
+  "brand": "samsung",
+  "slug": "Galaxy-Z-Fold4",
+  "price": 1500
+},{
+  "_id": {
+    "$oid": "63a2a62bc262d9727f397fe2"
+  },
+  "image": "https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-purple-1.jpg",
+  "name": "iPhone 14 Pro Max",
+  "description": "Chip Apple A16 Bionic 6 nhân\n\nRam 6GB\n\nDung lưỢng 128GB\n\nCamera sau: Chính 48MP & Phụ 12MP, 12MP\n\nCamera trước: 12MP\n\nPin 4323mAh, Sạc 20W",
+  "brand": "Apple",
+  "slug": "iPhone-14-Pro-Max",
+  "price": 1350
+},{
+  "_id": {
+    "$oid": "63a2a906c262d9727f397fe3"
+  },
+  "image": "https://cdn.hoanghamobile.com/i/preview/Uploads/2022/09/08/33333.png",
+  "name": "iPhone 14 Pro",
+  "description": "Chip Apple A16 Bionic 6 nhân\n\nRam 6GB\n\nDung lưỢng 128GB\n\nCamera sau: Chính 48MP & Phụ 12MP, 12MP\n\nCamera trước: 12MP\n\nPin 3200mAh, Sạc 20W",
+  "brand": "Apple",
+  "slug": "iPhone-14-Pro",
+  "price": 1200
+},{
+  "_id": {
+    "$oid": "63a2ab52c262d9727f397fe4"
+  },
+  "image": "https://cdn.hoanghamobile.com/i/preview/Uploads/2021/09/15/image-removebg-preview-15.png",
+  "name": "iPhone 13 Pro",
+  "description": "Chip Apple A15 Bionic\n\nRAM: 6 GB\n\nDung lượng: 1 TB\n\nCamera sau: 3 camera 12 MP\n\nCamera trước: 12 MP\n\nPin 3095 mAh, Sạc 20 W",
+  "brand": "Apple",
+  "slug": "iPhone-13-Pro",
+  "price": 1500
+},{
+  "_id": {
+    "$oid": "63b2ce4e10060be2db195278"
+  },
+  "name": "iPhone 10",
+  "description": "hello world",
+  "image": "https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-hh-600x600.jpg",
+  "brand": "apple",
+  "slug": "iPhone 10",
+  "price": 100,
+  "__v": 0
+}]
